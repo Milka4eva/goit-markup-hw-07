@@ -534,16 +534,24 @@ img {
     padding-bottom: 94px;
 }
 
-.worklist__list {
+.worklist__title {
+    margin: 0;
+    padding: 0;
+    color: var(--main-blackish);
+    margin-bottom: 50px;
+}
+
+.worklist__box {
     display: flex;
 }
 
-.worklist__list li + li {
+.worklist__box li + li {
     margin-left: 30px;
 }
 
 .worklist__item {
     position: relative;
+    list-style: none;
 }
 
 .worklist__item:hover, .worklist__item:focus {
@@ -576,12 +584,11 @@ img {
     background-color: #F5F4FA;
     padding-top: 94px;
     padding-bottom: 94px;
-    margin-top: 0;
 }
 
 .team__name {
-    margin-top: 94px;
-    display: inline-block;
+    margin-bottom: 50px;
+    display: block;
     text-align: center;
 }
 
@@ -673,9 +680,13 @@ img {
 }
 
 /*Clients*/
-.clients {
+.clientsmenu {
     padding-top: 94px;
     padding-bottom: 94px;
+}
+
+.clients__title {
+    margin-bottom: 50px;
 }
 
 .clients__list {
@@ -718,13 +729,14 @@ img {
 }
 
 /*Footer Styles*/
+footer {
+    background-color: var(--main-background);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 
 .footerdiv {
     display: flex;
-    background-color: var(--main-background);
-
-    padding-top: 60px;
-    padding-bottom: 60px;
 }
 
 .footercontacts {
