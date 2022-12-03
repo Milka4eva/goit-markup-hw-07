@@ -358,7 +358,7 @@ header {
 }
 
 .modal__input:focus, .modal__input:hover,
-.modal__textarea:hover, .fmodal__textarea:focus,
+.modal__textarea:hover, .modal__textarea:focus,
 .modal__input:active, .modal__textarea:active {
     border: 1px solid #2196F3;
 }
