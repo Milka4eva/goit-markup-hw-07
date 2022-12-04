@@ -42,7 +42,7 @@
         width: 448px;
     }
 
-    &__itemfirst, &__item {
+    &__itemfirst, &__item, &__itemlast {
         width: 448px;
         display: flex;
         flex-direction: column;
@@ -184,14 +184,14 @@
     }
     
     &__agreeicon {
-        opacity: 0;
-    }
+        opacity: 1;
+    }   
     
-    &__checkbox:checked + &__checkitem{
+    &__checkbox:checked + &__checkitem {
         background-color: $main-blue;
         border: none;
         border-radius: 4px;
-    }
+    }     
     
     &__checkbox:checked + &__agreeicon {
         opacity: 1;

@@ -44,7 +44,6 @@ header {
         color: $main-blackish;
         display: flex;
         padding-top: 32px;
-        padding-bottom: 32px;
         flex-direction: column;
         @include animated(color);
     }

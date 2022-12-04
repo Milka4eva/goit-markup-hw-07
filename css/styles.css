@@ -449,7 +449,7 @@ header {
     opacity: 0;
 }
 
-.modal__checkbox:checked + .modal__checkitem{
+.modal__checkbox:checked + .modal__checkitem {
     background-color: var(--main-blue);
     border: none;
     border-radius: 4px;

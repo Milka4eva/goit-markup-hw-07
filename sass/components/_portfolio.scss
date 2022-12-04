@@ -4,6 +4,19 @@
     padding-bottom: 94px;
 }
 
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px; 
+}
+
 .projectmenu {
     list-style: none;
     display: flex;
@@ -77,15 +90,11 @@
     }
     
     &__text {
-        display: block;
         @extend %titles;
-        width: 100%;
-        height: 100%;
         left: 0;
         top: 0;
         color: $main-white;
         font-weight: 400;
-        font-style: normal;
         font-size: 18px;
         line-height: 1.55;
         letter-spacing: 0.03em;

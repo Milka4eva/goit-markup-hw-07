@@ -1,6 +1,5 @@
-
 footer {
-    background-color: var(--main-background);
+    background-color: $main-background;
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -84,7 +83,7 @@ footer {
         padding-bottom: 20px;
     }
 
-    &_item {
+    &__item {
         display: inline-block;
         height: 44px;
         width: 44px;
