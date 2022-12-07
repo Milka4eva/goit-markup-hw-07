@@ -21,7 +21,7 @@
         right: 8px;
         position: absolute;
         cursor: pointer;
-        transition: fill 250ms $transition-cubic;
+        @include animated(fill);
     }
 
     &__button:hover, &__button:focus {
@@ -68,7 +68,7 @@
         border: 1px solid rgba(33, 33, 33, 0.2);
         padding: 11px 30px;
     
-        transition: border 250ms $transition-cubic;
+        @include animated(border);
     }
 
     &__textarea {
@@ -80,7 +80,7 @@
         outline: 0;
         border: 1px solid rgba(33, 33, 33, 0.2);
         resize: none;    
-        transition: border 250ms $transition-cubic;
+        @include animated(border);
     }
 
     &__textarea::placeholder {
@@ -128,7 +128,8 @@
         color: $main-white;
         background-color: $main-blue;
         padding: 10px 52px;
-        transition: background-color 250ms $transition-cubic;
+        @include animated(background-color);
+        
     }
 
     &__agreebutton:hover, &__agreebutton:focus {
@@ -147,6 +148,7 @@
         transform: translateX (-60%);
         bottom: 17%;
         right: 94%;
+        @include animated(fill);
     }
     
     &__input:hover + &__icon,
@@ -181,10 +183,11 @@
         border: 1px solid $main-blackish;
         margin-right: 8.38px;
         border-radius: 4px;
+        @include animated(background-color);
     }
     
     &__agreeicon {
-        opacity: 1;
+        opacity: 0;
     }   
     
     &__checkbox:checked + &__checkitem {
